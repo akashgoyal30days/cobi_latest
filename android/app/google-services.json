@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "890471394335",
+    "project_id": "cobi-app-8f358",
+    "storage_bucket": "cobi-app-8f358.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890471394335:android:99d27b0de0cc25e9cd392a",
+        "android_client_info": {
+          "package_name": "com.in30days.cobi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890471394335-gvnnmhcdljiqn625ahj4ib54uen7hlsb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.cobi",
+            "certificate_hash": "25bc4f45e5c854f4cbc664d73782b4a191914f23"
+          }
+        },
+        {
+          "client_id": "890471394335-q9o6irljnjf88q5omghc9pj29g78fvjt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6NXQPBmKb-or1mZqHev_p4vBbqdT1i70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890471394335-q9o6irljnjf88q5omghc9pj29g78fvjt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "890471394335-qhvtiv2ofngrdlc3943f868hel7iqu6e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.cobi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
