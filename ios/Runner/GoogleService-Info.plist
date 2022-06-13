@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>890471394335-qhvtiv2ofngrdlc3943f868hel7iqu6e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.890471394335-qhvtiv2ofngrdlc3943f868hel7iqu6e</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>890471394335-cd0b3v47hai105e8jnckpg76e6orhe7e.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDjBhj-7zEutrIfxKj6C5wThX8R50ps66M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>890471394335</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.in30days.cobi</string>
+	<key>PROJECT_ID</key>
+	<string>cobi-app-8f358</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cobi-app-8f358.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:890471394335:ios:b7cf75aaa40713c8cd392a</string>
+</dict>
+</plist>
