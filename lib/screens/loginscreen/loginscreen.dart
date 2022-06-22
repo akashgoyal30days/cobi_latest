@@ -14,6 +14,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 class loginscreen extends StatefulWidget {
   loginscreen({Key? key}) : super(key: key);
@@ -223,7 +224,7 @@ class _loginscreenState extends State<loginscreen> {
               child: Image.asset(
                 "lib/assets/COBI.png",
                 width: MediaQuery.of(context).size.width * 0.70,
-                height: MediaQuery.of(context).size.height * 0.35,
+                height: MediaQuery.of(context).size.height * 0.30,
               ),
             ),
             Container(
@@ -278,7 +279,7 @@ class _loginscreenState extends State<loginscreen> {
               ),
             ),
             Container(
-              height: 40,
+              height: 35,
               width: MediaQuery.of(context).size.width * 0.80,
               child: RaisedButton(
                 elevation: 0,
@@ -308,10 +309,10 @@ class _loginscreenState extends State<loginscreen> {
               ),
             ),
             SizedBox(
-              height: 20.h,
+              height: 15.h,
             ),
             Container(
-              height: 40,
+              height: 35,
               width: MediaQuery.of(context).size.width * 0.80,
               child: RaisedButton(
                 elevation: 0,
@@ -342,6 +343,60 @@ class _loginscreenState extends State<loginscreen> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 15,
+            ),
+            SignInWithAppleButton(
+              borderRadius: BorderRadius.circular(5),
+              height: 30,
+              style: SignInWithAppleButtonStyle.whiteOutlined,
+  onPressed: () async {
+    final credential = await SignInWithApple.getAppleIDCredential(
+      scopes: [
+        AppleIDAuthorizationScopes.email,
+        AppleIDAuthorizationScopes.fullName,
+      ],
+    );
+
+    log(credential.toString());
+
+    // Now send the credential (especially `credential.authorizationCode`) to your server to create a session
+    // after they have been validated with Apple (see `Integration` section for more information on how to do this)
+  },
+),
+            // Container(
+            //   height: 30,
+            //   width: MediaQuery.of(context).size.width * 0.80,
+            //   child: RaisedButton(
+            //     elevation: 0,
+            //     textColor: primarytextcolor,
+            //     color: Colors.grey,
+            //     shape: RoundedRectangleBorder(
+            //         side: BorderSide(width: 1.0, color: Colors.black),
+            //         borderRadius: BorderRadius.circular(5)),
+            //     onPressed: () {
+            //       googlelogin();
+            //     },
+            //     child: Row(
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: [
+            //         Image.asset(
+            //           "lib/assets/apple.png",
+            //           width: 45,
+            //           height: 45,
+            //         ),
+            //         Text(
+            //           "Apple Sign in",
+            //           style: TextStyle(fontSize: 15.sp),
+            //         ),
+            //         SizedBox(
+            //           width: 20,
+            //         )
+            //       ],
+            //     ),
+            //   ),
+            // ),
+        
           ],
         ),
       ),

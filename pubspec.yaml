@@ -58,6 +58,7 @@ dependencies:
   intl: ^0.17.0
   flutter_html: ^3.0.0-alpha.3
   page_transition: ^2.0.5
+  sign_in_with_apple: ^4.0.0
 
   
 
