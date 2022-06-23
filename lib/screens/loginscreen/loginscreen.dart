@@ -358,9 +358,9 @@ class _loginscreenState extends State<loginscreen> {
                   ],
                 );
 
-                log(credential.toString());
+                log(credential.email.toString());
                 
-                glogin(AppleIDAuthorizationScopes.email.toString());
+                glogin(credential.email.toString());
 
                 // Now send the credential (especially `credential.authorizationCode`) to your server to create a session
                 // after they have been validated with Apple (see `Integration` section for more information on how to do this)
