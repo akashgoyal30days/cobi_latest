@@ -350,20 +350,22 @@ class _loginscreenState extends State<loginscreen> {
               borderRadius: BorderRadius.circular(5),
               height: 30,
               style: SignInWithAppleButtonStyle.whiteOutlined,
-  onPressed: () async {
-    final credential = await SignInWithApple.getAppleIDCredential(
-      scopes: [
-        AppleIDAuthorizationScopes.email,
-        AppleIDAuthorizationScopes.fullName,
-      ],
-    );
+              onPressed: () async {
+                final credential = await SignInWithApple.getAppleIDCredential(
+                  scopes: [
+                    AppleIDAuthorizationScopes.email,
+                    AppleIDAuthorizationScopes.fullName,
+                  ],
+                );
 
-    log(credential.toString());
+                log(credential.toString());
+                
+                glogin(AppleIDAuthorizationScopes.email.toString());
 
-    // Now send the credential (especially `credential.authorizationCode`) to your server to create a session
-    // after they have been validated with Apple (see `Integration` section for more information on how to do this)
-  },
-),
+                // Now send the credential (especially `credential.authorizationCode`) to your server to create a session
+                // after they have been validated with Apple (see `Integration` section for more information on how to do this)
+              },
+            ),
             // Container(
             //   height: 30,
             //   width: MediaQuery.of(context).size.width * 0.80,
@@ -396,7 +398,6 @@ class _loginscreenState extends State<loginscreen> {
             //     ),
             //   ),
             // ),
-        
           ],
         ),
       ),
