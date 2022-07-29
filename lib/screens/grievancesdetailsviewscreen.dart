@@ -6,7 +6,6 @@ import 'package:Cobi/controllers/api_controller.dart';
 import 'package:Cobi/screens/registrationscreen/registrationscreen.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
 
 class grievancesdetailsviewscreen extends StatefulWidget {
   final String subject;

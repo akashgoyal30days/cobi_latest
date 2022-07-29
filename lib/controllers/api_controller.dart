@@ -1,7 +1,5 @@
 import 'package:Cobi/Constants/constants.dart';
-import 'package:Cobi/controllers/registration_input_controller.dart';
 
-import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -131,7 +129,7 @@ class getpersonaldocsApi {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       showloader = false;
       // // debugPrint('Stacktrace: ' + stacktrace.toString());
       // // debugPrint(error.toString());

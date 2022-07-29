@@ -5,7 +5,6 @@ import 'package:Cobi/Constants/constants.dart';
 import 'package:Cobi/Widgets/widgets.dart';
 import 'package:Cobi/controllers/api_controller.dart';
 import 'package:Cobi/screens/companypdfview.dart';
-import 'package:Cobi/screens/personalpdfview.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -98,7 +97,6 @@ class _companydocscreenState extends State<companydocscreen> with list {
         'file',
         seletedimg[index]!.readAsBytes().asStream(),
         seletedimg[index]!.lengthSync(),
-        
         filename: a[a.length - 1].toString(),
         contentType: MediaType('application', 'pdf'),
       ));
@@ -128,7 +126,6 @@ class _companydocscreenState extends State<companydocscreen> with list {
       // debugPrint(error.toString());
     }
   }
-
 
   Future imagefromGAllery(int index) async {
     final image = await FilePicker.platform.pickFiles(

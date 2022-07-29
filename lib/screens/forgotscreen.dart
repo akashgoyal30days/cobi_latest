@@ -1,11 +1,9 @@
-import 'dart:convert';
 import 'dart:developer';
 
 import 'package:Cobi/controllers/api_controller.dart';
 import 'package:Cobi/screens/registrationscreen/registrationscreen.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class forgotscreen extends StatefulWidget {
   const forgotscreen({Key? key}) : super(key: key);
@@ -135,6 +133,6 @@ class _forgotscreenState extends State<forgotscreen> {
               content: Text("Email is Required")));
         }
       }
-    } catch (error, stacktrace) {}
+    } catch (error) {}
   }
 }

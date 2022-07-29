@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:Cobi/Constants/constants.dart';
 import 'package:Cobi/Widgets/widgets.dart';
 import 'package:Cobi/controllers/api_controller.dart';
@@ -7,7 +5,6 @@ import 'package:Cobi/controllers/company_details_controller.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 List industryitems = ["Manufacturing", "IT Industry"];
 String? industrytypevalue;
@@ -51,7 +48,7 @@ class _CompanydetailsscreenState extends State<Companydetailsscreen> {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       // debugPrint('Stacktrace: ' + stacktrace.toString());
       // debugPrint(error.toString());
     }
@@ -73,7 +70,7 @@ class _CompanydetailsscreenState extends State<Companydetailsscreen> {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       // debugPrint('Stacktrace: ' + stacktrace.toString());
       // debugPrint(error.toString());
     }
@@ -93,7 +90,7 @@ class _CompanydetailsscreenState extends State<Companydetailsscreen> {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       // debugPrint('Stacktrace: ' + stacktrace.toString());
       // debugPrint(error.toString());
     }
@@ -113,7 +110,7 @@ class _CompanydetailsscreenState extends State<Companydetailsscreen> {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       // debugPrint('Stacktrace: ' + stacktrace.toString());
       // debugPrint(error.toString());
     }
@@ -165,7 +162,7 @@ class _CompanydetailsscreenState extends State<Companydetailsscreen> {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       // debugPrint('Stacktrace: ' + stacktrace.toString());
       // debugPrint(error.toString());
     }
@@ -214,7 +211,7 @@ class _CompanydetailsscreenState extends State<Companydetailsscreen> {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       // debugPrint('Stacktrace: ' + stacktrace.toString());
       // debugPrint(error.toString());
     }
@@ -599,6 +596,7 @@ class _CompanydetailsscreenState extends State<Companydetailsscreen> {
                                                   if (value!.isEmpty) {
                                                     return "Field is Required";
                                                   }
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,
@@ -660,6 +658,7 @@ class _CompanydetailsscreenState extends State<Companydetailsscreen> {
                                                       value.length > 10) {
                                                     return "PAN No Should be 10-digit No";
                                                   }
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,
@@ -722,6 +721,7 @@ class _CompanydetailsscreenState extends State<Companydetailsscreen> {
                                                     return "Gst No Should be 15-digit No";
                                                   }
                                                   ;
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,

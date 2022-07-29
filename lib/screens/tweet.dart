@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:Cobi/Constants/constants.dart';
 import 'package:Cobi/Widgets/widgets.dart';
 import 'package:Cobi/screens/registrationscreen/registrationscreen.dart';

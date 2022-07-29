@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:Cobi/Constants/constants.dart';
 import 'package:Cobi/Widgets/widgets.dart';
 import 'package:Cobi/screens/Companydetailsscreen.dart';
@@ -14,12 +12,7 @@ import 'package:Cobi/screens/registrationscreen/registrationscreen.dart';
 import 'package:Cobi/screens/searchproductscreen.dart';
 import 'package:Cobi/screens/tweet.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class dashboard_screen extends StatefulWidget {
   dashboard_screen({Key? key}) : super(key: key);

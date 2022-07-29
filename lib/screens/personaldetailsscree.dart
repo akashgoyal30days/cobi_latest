@@ -5,7 +5,6 @@ import 'package:Cobi/controllers/personal_details_controller.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class personaldetailscreen extends StatefulWidget {
   personaldetailscreen({Key? key}) : super(key: key);
@@ -55,7 +54,7 @@ class _profiledetailsscreenState extends State<personaldetailscreen> {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       // debugPrint('Stacktrace: ' + stacktrace.toString());
       // debugPrint(error.toString());
     }
@@ -93,7 +92,7 @@ class _profiledetailsscreenState extends State<personaldetailscreen> {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       // debugPrint('Stacktrace: ' + stacktrace.toString());
       // debugPrint(error.toString());
     }
@@ -245,6 +244,7 @@ class _profiledetailsscreenState extends State<personaldetailscreen> {
                                                   if (value!.isEmpty) {
                                                     return "Field is Required";
                                                   }
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,
@@ -318,6 +318,7 @@ class _profiledetailsscreenState extends State<personaldetailscreen> {
                                                   if (value!.isEmpty) {
                                                     return "Field is Required";
                                                   }
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,
@@ -377,6 +378,7 @@ class _profiledetailsscreenState extends State<personaldetailscreen> {
                                                   if (value!.isEmpty) {
                                                     return "Field is Required";
                                                   }
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,
@@ -438,6 +440,7 @@ class _profiledetailsscreenState extends State<personaldetailscreen> {
                                                       value.length > 10) {
                                                     return "PAN No Should be 10-digit No";
                                                   }
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,
@@ -498,6 +501,7 @@ class _profiledetailsscreenState extends State<personaldetailscreen> {
                                                       value.length > 12) {
                                                     return "Aadhar No Should be 12-digit No";
                                                   }
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,
@@ -616,6 +620,7 @@ class _profiledetailsscreenState extends State<personaldetailscreen> {
                                                       value.length > 10) {
                                                     return "Mobile No Should be 10 digit No";
                                                   }
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,
@@ -745,6 +750,7 @@ class _profiledetailsscreenState extends State<personaldetailscreen> {
                                                   if (value!.isEmpty) {
                                                     return "Enter a Valid Email id ";
                                                   }
+                                                  return null;
                                                 },
                                                 decoration: InputDecoration(
                                                     border: InputBorder.none,

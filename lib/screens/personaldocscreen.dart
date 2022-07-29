@@ -6,7 +6,6 @@ import 'package:http_parser/http_parser.dart';
 import 'package:Cobi/Constants/constants.dart';
 import 'package:Cobi/Widgets/widgets.dart';
 import 'package:Cobi/controllers/api_controller.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:mime/mime.dart';

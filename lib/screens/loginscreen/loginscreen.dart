@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:developer';
-import 'package:Cobi/screens/Companydetailsscreen.dart';
 import 'package:Cobi/Constants/constants.dart';
 import 'package:Cobi/Widgets/widgets.dart';
 import 'package:Cobi/controllers/api_controller.dart';
@@ -166,7 +165,7 @@ class _loginscreenState extends State<loginscreen> {
               content: Text("Login Failed! Try again...")));
         }
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       googlelogout();
       setState(() {});
       // debugPrint('Stacktrace: ' + stacktrace.toString());
@@ -359,7 +358,7 @@ class _loginscreenState extends State<loginscreen> {
                 );
 
                 log(credential.email.toString());
-                
+
                 glogin(credential.email.toString());
 
                 // Now send the credential (especially `credential.authorizationCode`) to your server to create a session

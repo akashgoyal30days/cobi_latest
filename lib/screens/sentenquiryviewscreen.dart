@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:Cobi/Constants/constants.dart';
 import 'package:Cobi/controllers/api_controller.dart';
-import 'package:Cobi/screens/registrationscreen/registrationscreen.dart';
 import 'package:Cobi/screens/sentenquirydetailsviewscreen.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';

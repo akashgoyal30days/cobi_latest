@@ -1,19 +1,9 @@
-import 'dart:ui';
-
-import 'package:Cobi/Constants/constants.dart';
-import 'package:Cobi/Widgets/widgets.dart';
 import 'package:Cobi/screens/loginscreen/loginscreen.dart';
 import 'package:Cobi/screens/registrationscreen/registrationscreen.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:new_version/new_version.dart';
-
-import '../../main.dart';
 
 class welcome_screen extends StatefulWidget {
   welcome_screen({Key? key}) : super(key: key);

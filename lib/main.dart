@@ -1,4 +1,3 @@
-import 'package:Cobi/screens/Companydetailsscreen.dart';
 import 'package:Cobi/screens/dashboardscreen.dart';
 import 'package:Cobi/screens/welcomescreen/welcomescreen.dart';
 import 'package:firebase_core/firebase_core.dart';

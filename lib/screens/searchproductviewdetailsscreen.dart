@@ -1,8 +1,6 @@
 import 'dart:developer';
 
-import 'package:Cobi/controllers/api_controller.dart';
 import 'package:Cobi/screens/sendenquiryscreen.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:shared_preferences/shared_preferences.dart';

@@ -3,14 +3,11 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:Cobi/Constants/constants.dart';
-import 'package:Cobi/Widgets/descriptionfield.dart';
 import 'package:Cobi/Widgets/inputfield.dart';
 import 'package:Cobi/controllers/api_controller.dart';
 import 'package:Cobi/screens/registrationscreen/registrationscreen.dart';
 import 'package:dio/dio.dart';
-import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
@@ -379,7 +376,6 @@ class _addpaymentdeyailsscreenState extends State<addpaymentdeyailsscreen> {
                   if (bankid != null &&
                       chequenumbercontroller.text.isNotEmpty &&
                       chequeamountcontroller.text.isNotEmpty &&
-                      currentDate != null &&
                       finalimage != null) {
                     addpaymentAPI();
                     showLoaderDialog(context);

@@ -121,7 +121,7 @@ class _registrationscreenState extends State<registrationscreen> {
           if (rsp['error'].toString() == "invalid_auth") {}
         } else if (rsp['status'].toString() == "already_exist") {}
       }
-    } catch (error, stacktrace) {
+    } catch (error) {
       // // debugPrint('Stacktrace: ' + stacktrace.toString());
       // // debugPrint(error.toString());
     }
